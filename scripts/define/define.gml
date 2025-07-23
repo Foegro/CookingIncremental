@@ -1,5 +1,7 @@
-enum jump_states {
-	none,
+enum states {
+	standing,
 	squat,
-	jump
+	jump,
+	pre_trowing,
+	throwing
 }
