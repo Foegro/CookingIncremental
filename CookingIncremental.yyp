@@ -41,6 +41,7 @@
   "name":"CookingIncremental",
   "resources":[
     {"id":{"name":"obj_fire","path":"objects/obj_fire/obj_fire.yy",},},
+    {"id":{"name":"obj_food_dropped","path":"objects/obj_food_dropped/obj_food_dropped.yy",},},
     {"id":{"name":"obj_food_thrown","path":"objects/obj_food_thrown/obj_food_thrown.yy",},},
     {"id":{"name":"obj_food","path":"objects/obj_food/obj_food.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
@@ -54,6 +55,7 @@
     {"id":{"name":"spr_player_default","path":"sprites/spr_player_default/spr_player_default.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
     {"id":{"name":"spr_player_squat","path":"sprites/spr_player_squat/spr_player_squat.yy",},},
+    {"id":{"name":"spr_player_stun","path":"sprites/spr_player_stun/spr_player_stun.yy",},},
     {"id":{"name":"spr_player_throw","path":"sprites/spr_player_throw/spr_player_throw.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
   ],

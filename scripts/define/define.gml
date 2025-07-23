@@ -3,5 +3,6 @@ enum states {
 	squat,
 	jump,
 	pre_trowing,
-	throwing
+	throwing,
+	stun
 }

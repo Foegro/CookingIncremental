@@ -1,0 +1,1 @@
+instance_create_depth(-16,ystart,0,obj_fire).hspeed = 1.5

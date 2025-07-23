@@ -73,9 +73,14 @@ switch (state) {
 			state = states.standing
 		}
 		break
+	case states.stun:
+		stun--
+		if (stun <= 0) state = states.standing
+		break
 }
+if (state != states.pre_trowing && state != states.throwing) tower_time = current_time/100
 for (var i = 0; i < array_length(stack); i++) {
-	var inst = collision_rectangle(food_origin_x+sin(i/5+current_time/100)*i*power(1.075,i)-16,food_origin_y-12*i-16,food_origin_x+sin(i/5+current_time/100)*i*power(1.075,i)+16,food_origin_y-12*i+16,obj_food,false,false)
+	var inst = collision_rectangle(food_origin_x+sin(i/5+tower_time )*i*power(1.1,i)-16,food_origin_y-12*i-16,food_origin_x+sin(i/5+current_time/100)*i*power(1.075,i)+16,food_origin_y-12*i+16,obj_food,false,false)
 	if (inst != noone) {
 		stack[array_length(stack)] = inst.image_index
 		instance_destroy(inst)

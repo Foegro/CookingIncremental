@@ -5,3 +5,5 @@ jump_speed = 0
 jump_timer = -1
 food_origin_x = x
 food_origin_y = bbox_top+12
+tower_time = current_time/100
+stun = 0
