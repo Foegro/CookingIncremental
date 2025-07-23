@@ -1,0 +1,1 @@
+x = clamp(x,xstart-128,xstart+128)
