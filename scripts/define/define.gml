@@ -4,5 +4,6 @@ enum states {
 	jump,
 	pre_trowing,
 	throwing,
+	stun_flying,
 	stun
 }

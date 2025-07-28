@@ -6,6 +6,7 @@ var t = keyboard_check_pressed(ord("Y")) || keyboard_check_pressed(ord("Z"))
 var cap = max(4, array_length(stack)) + 3;
 switch (state) {
 	case states.standing:
+		invincible--
 		food_origin_x = x
 		food_origin_y = bbox_top+12
 		if (r) {
@@ -36,6 +37,7 @@ switch (state) {
 		}
 		break
 	case states.squat:
+		invincible--
 		food_origin_x = x
 		food_origin_y = bbox_top+12
 		hspeed = 0
@@ -52,6 +54,7 @@ switch (state) {
 		}
 		break
 	case states.jump:
+		invincible--
 		food_origin_x = x
 		food_origin_y = bbox_top+12
 		vspeed += 0.5
@@ -62,9 +65,11 @@ switch (state) {
 		}
 		break
 	case states.pre_trowing:
+		invincible--
 		food_origin_x = x
 		food_origin_y = y
 	case states.throwing:
+		invincible--
 		food_origin_x = x
 		food_origin_y = y
 		instance_create_depth(x,y,0,obj_food_thrown).image_index = stack[0]
@@ -73,10 +78,25 @@ switch (state) {
 			state = states.standing
 		}
 		break
+	case states.stun_flying:
+		stun--
+		vspeed += 0.5
+		if (y >= ystart) {
+			speed = 0
+			y = ystart
+			state = states.stun
+			image_index = 1
+		}
+		break
 	case states.stun:
 		stun--
 		if (stun <= 0) state = states.standing
 		break
+}
+if (invincible > 0) {
+	image_alpha = abs(sin(current_time/50))
+} else {
+	image_alpha = 1
 }
 if (state != states.pre_trowing && state != states.throwing) tower_time = current_time/100
 for (var i = 0; i < array_length(stack); i++) {
