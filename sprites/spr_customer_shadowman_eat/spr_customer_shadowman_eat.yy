@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Shadowguy",
-    "path":"folders/Sprites/Minigame/Cutomer/Shadowguy.yy",
+    "name":"Shadowman",
+    "path":"folders/Sprites/Minigame/Cutomer/Shadowman.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

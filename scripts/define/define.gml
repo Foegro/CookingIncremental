@@ -8,10 +8,15 @@ enum states {
 	stun
 }
 enum customer_move_pattern {
-	linear
+	linear,
+	bounds
 }
 enum customer_states {
 	walking,
 	eating,
-	running
+	leaving
+}
+enum customer_leave_pattern {
+	left,
+	down
 }
