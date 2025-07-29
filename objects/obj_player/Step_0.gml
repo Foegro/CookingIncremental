@@ -24,7 +24,7 @@ switch (state) {
 			sprite_index = spr_player_default
 		}
 		if (j) {
-			jump_speed = hspeed
+			jump_speed = hspeed/2
 			jump_dir = r-l
 			state = states.squat
 			jump_timer = 1+array_length(stack)*2
@@ -72,7 +72,7 @@ switch (state) {
 		invincible--
 		food_origin_x = x
 		food_origin_y = y
-		instance_create_depth(x,y,0,obj_food_thrown).image_index = stack[0]
+		instance_create_depth(x,y,depth+2,obj_food_thrown).image_index = stack[0]
 		array_delete(stack,0,1)
 		if (array_length(stack) == 0) {
 			state = states.standing

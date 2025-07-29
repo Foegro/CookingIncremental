@@ -9,8 +9,8 @@
   "name":"obj_food_thrown",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Food",
+    "path":"folders/Objects/Minigame/Food.yy",
   },
   "parentObjectId":null,
   "persistent":false,

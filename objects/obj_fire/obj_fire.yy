@@ -8,8 +8,8 @@
   "name":"obj_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Minigame",
+    "path":"folders/Objects/Minigame.yy",
   },
   "parentObjectId":null,
   "persistent":false,

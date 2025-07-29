@@ -7,3 +7,11 @@ enum states {
 	stun_flying,
 	stun
 }
+enum customer_move_pattern {
+	linear
+}
+enum customer_states {
+	walking,
+	eating,
+	running
+}
